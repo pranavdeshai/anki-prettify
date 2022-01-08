@@ -6,19 +6,19 @@
 
     /* Tags */
     --tag-background: hsla(0, 0%, 100%, 0.08);
-    --tag-background-bright: hsla(0, 0%, 100%, 0.122);
+    --tag-background-bright: hsla(0, 0%, 100%, 0.1);
     --tag-foreground: hsla(0, 0%, 100%, 0.7);
 
     /* UI */
-    --card-shadow: 0 7px 14px 0 hsla(0, 0%, 0%, 0.122),
+    --card-shadow: 0 7px 14px 0 hsla(0, 0%, 0%, 0.1),
         0 3px 6px 0 hsla(0, 0%, 0%, 0.1);
     --card-border: 1px solid hsla(0, 0%, 100%, 0.04);
     --card-border-radius: 0.2em;
-    --card-max-width: 50em;
+    --card-max-width: 40em;
     --field-padding: 2em;
 
     /* Fonts */
-    --font-family-normal: "Avenir", "system-ui", "sans-serif";
+    --font-family-normal: "Inter", "Rubik", "Avenir", "system-ui";
     --font-family-monospace: "Monaco", "Menlo";
     --font-size-normal: 16px;
     --font-size-small: calc(var(--font-size-normal) - 2px);
@@ -30,7 +30,7 @@
     --line-height: 1.5;
 
     /* Cloze */
-    --cloze-color: hsl(192, 100%, 83%);
+    --cloze-color: hsla(192, 100%, 83%, 1);
 }
 
 /* --------------------BACKGROUND-------------------- */
@@ -40,9 +40,8 @@ div#qa {
     background-color: var(--main-background);
 }
 
-html.mobile,
-div#qa.mobile {
-    background-color: none;
+html.mobile {
+    background-color: transpartent !important;
 }
 
 /* -----------------------CARD----------------------- */
@@ -58,7 +57,7 @@ div#qa.mobile {
     margin: 0 auto;
     max-width: var(--card-max-width);
 
-    /* Flexbox */
+    /* Flexbox container */
     display: flex;
     flex-flow: column nowrap;
     justify-content: left;
