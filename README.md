@@ -1,4 +1,2 @@
-# anki-flashcard-templates
-Card templates for Anki
-
+# anki-templates
 Minimal and responsive themes for flashcards.
