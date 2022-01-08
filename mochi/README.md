@@ -1,4 +1,4 @@
-# Mochi
+# mochi
 Anki flashcard template based on the flashcard app - Mochi
 
 ## Features
