@@ -1,0 +1,147 @@
+/* --------------------VARIABLES--------------------- */
+:root {
+    /* Background colors */
+    --main-background: hsl(240, 3%, 15%);
+    --card-background: hsl(220, 3%, 19%);
+
+    /* Tags */
+    --tag-background: hsla(0, 0%, 100%, 0.08);
+    --tag-background-bright: hsla(0, 0%, 100%, 0.122);
+    --tag-foreground: hsla(0, 0%, 100%, 0.7);
+
+    /* UI */
+    --card-shadow: 0 7px 14px 0 hsla(0, 0%, 0%, 0.122),
+        0 3px 6px 0 hsla(0, 0%, 0%, 0.1);
+    --card-border: 1px solid hsla(0, 0%, 100%, 0.04);
+    --card-border-radius: 0.2em;
+    --card-max-width: 50em;
+    --field-padding: 2em;
+
+    /* Fonts */
+    --font-family-normal: "Avenir", "system-ui", "sans-serif";
+    --font-family-monospace: "Monaco", "Menlo";
+    --font-size-normal: 16px;
+    --font-size-small: calc(var(--font-size-normal) - 2px);
+
+    /* Text */
+    --text-normal-color: hsla(0, 0%, 100%, 0.9);
+    --text-faint-color: hsla(0, 0%, 100%, 0.5);
+    --text-active-color: hsl(0, 0%, 100%);
+    --line-height: 1.5;
+
+    /* Cloze */
+    --cloze-color: hsl(192, 100%, 83%);
+}
+
+/* --------------------BACKGROUND-------------------- */
+html,
+html.night_mode,
+div#qa {
+    background-color: var(--main-background);
+}
+
+html.mobile,
+div#qa.mobile {
+    background-color: none;
+}
+
+/* -----------------------CARD----------------------- */
+.note {
+    background-color: var(--card-background);
+    border-radius: var(--card-border-radius);
+    border: var(--card-border);
+    box-shadow: var(--card-shadow);
+    color: var(--text-normal-color);
+    font-family: var(--font-family-normal);
+    font-size: var(--font-size-normal);
+    line-height: var(--line-height);
+    margin: 0 auto;
+    max-width: var(--card-max-width);
+
+    /* Flexbox */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: left;
+    align-items: stretch;
+}
+
+/* ----------------------FIELDS---------------------- */
+.main-container,
+.extra-container {
+    padding: var(--field-padding);
+    text-align: left;
+}
+
+.extra-container {
+    color: var(--text-faint-color);
+    font-size: var(--font-size-small);
+}
+
+/* -----------------------TAGS----------------------- */
+.tags-container {
+    margin-bottom: 1em;
+
+    /* Flexbox - NOT working
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: stretch;
+    gap: 0.5em;
+	*/
+}
+
+.tag {
+    background-color: var(--tag-background);
+    border-radius: var(--card-border-radius);
+    color: var(--tag-foreground);
+    font-family: var(--font-family-normal);
+    font-size: var(--font-size-normal);
+    padding: 0 0.4em;
+
+    /* Remove if flexbox works*/
+    margin-right: 0.5em;
+}
+
+.tag:hover {
+    background-color: var(--tag-background-bright);
+    color: var(--text-normal-color);
+}
+
+/* ---------------------DIVIDER---------------------- */
+.divider hr {
+    background-color: transparent;
+    border: none;
+    border-top: 1px dashed hsla(0, 0%, 100%, 0.2);
+    margin: 0;
+}
+
+/* ----------------------IMAGES---------------------- */
+img {
+    border-radius: var(--card-border-radius);
+    display: block;
+    margin: 1em auto;
+    max-height: 50vh;
+    max-width: 50%;
+    opacity: 0.7;
+    transition: max-width 0.2s, max-height 0.2s;
+}
+
+img:hover {
+    max-height: 100vh;
+    max-width: 100%;
+    opacity: 1;
+}
+
+/* ----------------------CLOZE----------------------- */
+.cloze {
+    color: var(--cloze-color);
+}
+
+/* --------------------FORMATTING-------------------- */
+u {
+    text-decoration: none;
+    border-bottom: solid 1px hsla(0, 0%, 100%, 0.3);
+}
+
+/* --------------------END OF CSS-------------------- */
+/* -------------------------------------------------- */
