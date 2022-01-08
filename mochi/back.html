@@ -1,0 +1,41 @@
+<div class="note">
+    <div class="main-container">
+        <div class="tags-container">{{Tags}}</div>
+        <div class="text">{{edit:cloze:Text}}</div>
+    </div>
+    <div class="divider"><hr /></div>
+    <div class="extra-container">
+        <div class="extra">{{edit:Extra}}</div>
+    </div>
+</div>
+
+<script>
+    /* SPLIT HIERARCHICAL TAGS */
+    var tagEl = document.querySelector(".tags-container");
+    if (tagEl) {
+        var tags = tagEl.innerHTML.split(" ");
+        var html = "";
+        tags.forEach(function (tag) {
+            if (tag != false) {
+                if (tag.includes("::")) {
+                    var topleveltag = tag.substring(0, tag.indexOf("::"));
+                    var bottomleveltag = tag.substring(
+                        tag.lastIndexOf("::") + 2
+                    );
+                } else {
+                    var bottomleveltag = tag;
+                }
+                var newTag =
+                    '<span class="tag ' +
+                    topleveltag +
+                    " " +
+                    bottomleveltag +
+                    '">' +
+                    bottomleveltag +
+                    "</span>";
+                html += newTag;
+            }
+        });
+        tagEl.innerHTML = html;
+    }
+</script>
