@@ -5,8 +5,8 @@
     --card-background: hsl(220, 3%, 19%);
 
     /* Tags */
-    --tag-background: hsla(0, 0%, 100%, 0.08);
-    --tag-background-bright: hsla(0, 0%, 100%, 0.1);
+    --tag-background: hsla(0, 0%, 100%, 0.05);
+    --tag-background-bright: hsla(0, 0%, 100%, 0.15);
     --tag-foreground: hsla(0, 0%, 100%, 0.7);
 
     /* UI */
@@ -40,8 +40,9 @@ div#qa {
     background-color: var(--main-background);
 }
 
+/* Adjustment for mobile (AnkiDroid) */
 html.mobile {
-    background-color: transpartent !important;
+    background-color: transparent !important;
 }
 
 /* -----------------------CARD----------------------- */
@@ -85,8 +86,7 @@ html.mobile {
     flex-flow: row wrap;
     justify-content: left;
     align-items: stretch;
-    gap: 0.5em;
-	*/
+    gap: 0.5em; */
 }
 
 .tag {
@@ -95,7 +95,7 @@ html.mobile {
     color: var(--tag-foreground);
     font-family: var(--font-family-normal);
     font-size: var(--font-size-normal);
-    padding: 0 0.4em;
+    padding: 0.1em 0.3em;
 
     /* Remove if flexbox works*/
     margin-right: 0.5em;
@@ -122,7 +122,7 @@ img {
     max-height: 50vh;
     max-width: 50%;
     opacity: 0.7;
-    transition: max-width 0.2s, max-height 0.2s;
+    transition: max-width 0.1s, max-height 0.1s;
 }
 
 img:hover {
@@ -140,6 +140,41 @@ img:hover {
 u {
     text-decoration: none;
     border-bottom: solid 1px hsla(0, 0%, 100%, 0.3);
+}
+
+a {
+    text-decoration: underline;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    table-layout: auto !important;
+}
+
+th,
+td {
+    padding: 0.5em !important;
+    border: solid 1px var(--tag-background) !important;
+}
+
+thead {
+    background-color: var(--tag-background-bright);
+}
+
+tbody tr {
+    color: var(--text-normal-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--tag-background);
+}
+
+/* Lists */
+ul,
+ol {
+    padding-inline-start: 1.5em;
 }
 
 /* --------------------END OF CSS-------------------- */
