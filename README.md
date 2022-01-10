@@ -1,6 +1,10 @@
 # anki-templates
+
 Minimal and responsive themes for flashcards.
 
----
-### Templates
-- [mochi](./mochi)
+## Templates
+
+### [Mochi](./mochi)
+
+-   [Basic](./mochi-basic)
+-   [Cloze](./mochi-cloze)
