@@ -2,18 +2,11 @@
 Anki flashcard template based on the flashcard app - Mochi
 
 ## Features
-### Minimal
-Minimises distractions without affecting important elements of the card.
-
-### Responsive
-Works on both Anki (desktop) and AnkiDroid (Android).
-Haven't tested on the Anki Mobile (iOS).
-
-### Night mode
-Easy on the eyes for the night-owls.
-
-### Fully customizable
-CSS variables for reusability and maintenance.
+- Minimal: Minimises distractions without affecting important elements of the card.
+- Responsive design: Works on both Anki (desktop) and AnkiDroid (Android)
+- Dark theme: Easy on the eyes for the night-owls.
+- Fully customizable: CSS variables for reusability and maintenance.
+- Tags: for quck context
 
 ## Instructions
 ### Direct download (quick and easy)
