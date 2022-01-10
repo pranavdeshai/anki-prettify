@@ -23,9 +23,10 @@ Anki flashcard template based on the flashcard app - Mochi
 
 1. Create a new note type
 2. Copy the contents of `front.html` and `back.html` into the front and back templates of the note (Can be accessed by clicking on `Cards` when in browser mode)
-    > **Note**: For cloze notes, you have to rename the field `Back Extra` to `Extra` (this is the field name used in the template because it's simpler)
-3. Copy the contents of `style.css` into the styling section of the note
-4. You can now use the new note type in your collection
+
+> **Note**: For cloze notes, you have to rename the field `Back Extra` to `Extra` (this is the field name used in the template because it's simpler)
+
+3. Copy the contents of `style.css` into the styling section of the note 4. You can now use the new note type in your collection
 
 ## Requirements
 
