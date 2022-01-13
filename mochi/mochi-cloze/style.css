@@ -18,8 +18,8 @@
     --field-padding: 2em;
 
     /* Fonts */
-    --font-family-normal: "Inter", "Rubik", "Avenir", "system-ui";
-    --font-family-monospace: "Monaco", "Menlo";
+    --font-family-normal: "Inter", "Rubik", "Avenir", "Helvetica", "Arial";
+    --font-family-monospace: "Monaco", "Menlo", "serif", "sans-serif";
     --font-size-normal: 16px;
     --font-size-small: calc(var(--font-size-normal) - 2px);
 
