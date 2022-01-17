@@ -22,6 +22,7 @@ Collection of customizable Anki flashcard templates with modern and clean themes
 ## Themes
 
 ### [Minimal](./src/minimal)
+![minimal-demo](assets/screenshots/minimal-desktop-dual.png)
 
 ## Instructions
 
