@@ -1,5 +1,6 @@
 /test
-.DS_Store
+*.scss
+*.css.map
 
 ### macOS ###
 # General
