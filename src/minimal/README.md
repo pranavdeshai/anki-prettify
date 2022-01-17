@@ -8,4 +8,4 @@ Anki flashcard template based on the flashcard app - Mochi.
 -   [Cloze](./minimal-cloze)
 
 ## Instructions
-Go to [home page](../../README.md)
+See [home page](../../README.md/#instructions)
