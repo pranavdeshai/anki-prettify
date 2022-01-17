@@ -30,7 +30,7 @@ Collection of customizable Anki flashcard templates with modern and clean themes
 1. Download the demo deck file (`{theme}-basic.apkg` or `{theme}-cloze.apkg`)
 2. Open Anki and click on `Import File`
 3. Select the downloaded deck file
-4. The new note type (`{theme}-basic` or `{theme}-cloze`) should be created automatically
+4. The new note type (`basic-{theme}` or `cloze-{theme}`) should be created automatically
 5. Use the note type as it is or [clone it](https://docs.ankiweb.net/editing.html#adding-a-note-type)
 
 ### Manual method
