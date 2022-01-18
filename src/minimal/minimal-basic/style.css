@@ -71,6 +71,10 @@
 .back {
   padding: 0 2em 2em;
 }
+.mobile .front,
+.mobile .back {
+  padding: 0 1em 1em;
+}
 
 .back {
   text-align: left;
@@ -78,14 +82,12 @@
   color: var(--text-faint);
 }
 
-/* -------------------------------------------------- CLOZE */
-.cloze {
-  color: var(--accent-primary);
-}
-
 /* -------------------------------------------------- TAGS */
 .tags {
   padding: 2em;
+}
+.mobile .tags {
+  padding: 1em;
 }
 .tags > * {
   all: initial;

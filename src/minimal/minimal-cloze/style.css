@@ -71,6 +71,10 @@
 .extra {
   padding: 0 2em 2em;
 }
+.mobile .text,
+.mobile .extra {
+  padding: 0 1em 1em;
+}
 
 .extra {
   text-align: left;
@@ -86,6 +90,9 @@
 /* -------------------------------------------------- TAGS */
 .tags {
   padding: 2em;
+}
+.mobile .tags {
+  padding: 1em;
 }
 .tags > * {
   all: initial;
