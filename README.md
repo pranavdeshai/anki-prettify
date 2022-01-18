@@ -65,3 +65,8 @@ Tested on
 ## Requirements
 
 -   Anki 2.1 or higher (should work with even Anki 2.0)
+
+## Plans for the future
+
+- [ ] New theme
+- [ ] Support for more card types (AnKing, IO enhanced, etc.)
