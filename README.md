@@ -12,7 +12,7 @@ Collection of customizable Anki flashcard templates with modern and clean themes
 ## Features
 
 -   Automatic dark and night theme switching
--   Responsive design - fully support for desktop and mobile apps
+-   Responsive design - full support for desktop and mobile apps
 -   Customizable color palette
 -   Support for Basic and Cloze note types
 -   Tags for quick context
