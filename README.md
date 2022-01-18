@@ -8,6 +8,7 @@ Collection of customizable Anki flashcard templates with modern and clean themes
 - [Add-on support](#add-on-support)
 - [Compatibility](#compatibility)
 - [Requirements](#requirements)
+- [Plans for future](#plans-for-future)
 
 ## Features
 
@@ -66,7 +67,7 @@ Tested on
 
 -   Anki 2.1 or higher (should work with even Anki 2.0)
 
-## Plans for the future
+## Plans for future
 
 - [ ] New theme
 - [ ] Support for more card types (AnKing, IO enhanced, etc.)
