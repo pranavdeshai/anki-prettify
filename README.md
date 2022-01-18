@@ -8,11 +8,12 @@ Collection of customizable Anki flashcard templates with modern and clean themes
 - [Add-on support](#add-on-support)
 - [Compatibility](#compatibility)
 - [Requirements](#requirements)
+- [Plans for future](#plans-for-future)
 
 ## Features
 
 -   Automatic dark and night theme switching
--   Responsive design - fully support for desktop and mobile apps
+-   Responsive design - full support for desktop and mobile apps
 -   Customizable color palette
 -   Support for Basic and Cloze note types
 -   Tags for quick context
@@ -65,3 +66,8 @@ Tested on
 ## Requirements
 
 -   Anki 2.1 or higher (should work with even Anki 2.0)
+
+## Plans for future
+
+- [ ] New theme
+- [ ] Support for more card types (AnKing, IO enhanced, etc.)
