@@ -1,4 +1,4 @@
-/* Anki Minimal by @pranavdeshai */
+/* Minimal by @pranavdeshai */
 /* -------------------------------------------------- PREFERENCES */
 :root {
   --cursor: default;
@@ -10,6 +10,7 @@
 
 /* -------------------------------------------------- THEME COLORS */
 .card {
+  /* DARK THEME */
   --background-primary: #ffffff;
   --background-primary-alt: #f7f7f7;
   --background-secondary: #3333330f;
@@ -24,6 +25,7 @@
   --box-shadow: #3c42570f 0px 7px 14px 0px, rgba(0, 0, 0, 0.06) 0px 3px 6px 0px;
 }
 .card.night_mode {
+  /* LIGHT THEME */
   --background-primary: #2e2f31;
   --background-primary-alt: #ffffff0a;
   --background-secondary: #ffffff14;
@@ -69,11 +71,11 @@
 /* -------------------------------------------------- FIELDS */
 .front,
 .back {
-  padding: 0 2em 2em;
+  padding: 2em;
 }
 .mobile .front,
 .mobile .back {
-  padding: 0 1em 1em;
+  padding: 1em;
 }
 
 .back {
@@ -84,10 +86,10 @@
 
 /* -------------------------------------------------- TAGS */
 .tags {
-  padding: 2em;
+  padding: 2em 2em 0;
 }
 .mobile .tags {
-  padding: 1em;
+  padding: 1em 1em 0;
 }
 .tags > * {
   all: initial;
@@ -213,15 +215,6 @@ u {
   text-decoration: none;
 }
 
-/* -------------------------------------------------- CUSTOM FONTS */
-@font-face {
-  font-family: Rubik;
-  src: url("_Rubik-VariableFont_wght.ttf"), url("_Rubik-Italic-VariableFont_wght.ttf");
-}
-@font-face {
-  font-family: Inter;
-  src: url("_Inter-VariableFont_slnt,wght.ttf");
-}
-/* -------------------------------------------------- END OF NORD THEME */
+/* -------------------------------------------------- END OF MINIMAL */
 
 /*# sourceMappingURL=style.css.map */
