@@ -2,6 +2,7 @@
 
 Collection of customizable Anki flashcard templates with modern and clean themes.
 
+- [About](#about)
 - [Features](#features)
 - [Themes](#themes)
 - [Instructions](#instructions)
@@ -9,6 +10,14 @@ Collection of customizable Anki flashcard templates with modern and clean themes
 - [Compatibility](#compatibility)
 - [Requirements](#requirements)
 - [Plans for future](#plans-for-future)
+
+## About
+
+Designed all the way from scratch, the goal is to make flashcards much more interesting to look at and reduce distractions, all while maintaining the robust functionality Anki offers or even improving upon it.
+
+If you like my work, please consider supporting.
+
+<a href="https://www.buymeacoffee.com/pranavdeshai"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=pranavdeshai&button_colour=FF5F5F&font_colour=ffffff&font_family=Inter&outline_colour=000000&coffee_colour=FFDD00"></a>
 
 ## Features
 
@@ -23,6 +32,7 @@ Collection of customizable Anki flashcard templates with modern and clean themes
 ## Themes
 
 ### [Minimal](./src/minimal)
+
 ![minimal-demo](assets/screenshots/minimal-desktop-dual.png)
 
 ## Instructions
@@ -69,5 +79,5 @@ Tested on
 
 ## Plans for future
 
-- [ ] New theme
-- [ ] Support for more card types (AnKing, IO enhanced, etc.)
+-   [ ] New theme
+-   [ ] Support for more card types (AnKing, IO enhanced, etc.)
