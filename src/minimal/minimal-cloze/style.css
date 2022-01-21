@@ -5,7 +5,7 @@
   --max-card-width: 40em;
   --img-width: 50%;
   --img-brightness: 0.75;
-  --img-filter: grayscale();
+  --img-filter: none;
 }
 
 /* -------------------------------------------------- THEME COLORS */
