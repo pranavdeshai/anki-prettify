@@ -10,7 +10,7 @@
 
 /* -------------------------------------------------- THEME COLORS */
 .card {
-  /* DARK THEME */
+  /* LIGHT THEME */
   --background-primary: #ffffff;
   --background-primary-alt: #f7f7f7;
   --background-secondary: #3333330f;
@@ -25,7 +25,7 @@
   --box-shadow: #3c42570f 0px 7px 14px 0px, rgba(0, 0, 0, 0.06) 0px 3px 6px 0px;
 }
 .card.night_mode {
-  /* LIGHT THEME */
+  /* DARK THEME */
   --background-primary: #2e2f31;
   --background-primary-alt: #ffffff0a;
   --background-secondary: #ffffff14;
