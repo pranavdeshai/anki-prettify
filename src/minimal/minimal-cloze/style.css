@@ -71,11 +71,11 @@
 /* -------------------------------------------------- FIELDS */
 .text,
 .extra {
-  padding: 0 2em 2em;
+  padding: 2em;
 }
 .mobile .text,
 .mobile .extra {
-  padding: 0 1em 1em;
+  padding: 1em;
 }
 
 .extra {
@@ -91,10 +91,10 @@
 
 /* -------------------------------------------------- TAGS */
 .tags {
-  padding: 2em;
+  padding: 2em 2em 0;
 }
 .mobile .tags {
-  padding: 1em;
+  padding: 1em 1em 0;
 }
 .tags > * {
   all: initial;
