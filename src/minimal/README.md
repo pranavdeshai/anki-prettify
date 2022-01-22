@@ -2,6 +2,8 @@
 
 Anki flashcard template based on the flashcard app - Mochi.
 
+![banner](../../assets/screenshots/minimal-banner.png)
+
 ## Desktop appearance
 
 <div style="display:flex; flex-flow:row wrap;">

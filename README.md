@@ -33,7 +33,7 @@ If you like my work, please consider supporting.
 
 ### [Minimal](./src/minimal)
 
-![minimal-demo](assets/screenshots/minimal-desktop-dual.png)
+![minimal-demo](assets/screenshots/minimal-banner.png)
 
 ## Instructions
 
