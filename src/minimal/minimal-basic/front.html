@@ -12,7 +12,7 @@
             tags.push(tagEl.innerHTML);
             tags.forEach((tag) => {
                 var childTag = tag.split("::").filter(Boolean);
-                tagEl.innerHTML = childTag[childTag.length - 1];
+                tagEl.innerHTML = childTag[childTag.length - 1].trim();
             });
         });
     } else {
