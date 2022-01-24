@@ -50,6 +50,10 @@
   background-color: #242426;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* -------------------------------------------------- LAYOUT */
 #qa {
   margin: 0 auto;
@@ -164,7 +168,7 @@ table {
 table thead {
   background-color: var(--background-secondary-alt);
 }
-table tr:nth-of-type(even) {
+table tr:nth-of-type(odd) {
   background-color: var(--background-primary-alt);
 }
 table tr:first-child th:first-child {
