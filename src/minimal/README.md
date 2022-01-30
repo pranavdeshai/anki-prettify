@@ -20,6 +20,7 @@ Anki flashcard template based on the flashcard app - Mochi.
 ## Note types
 
 -   [Basic](./minimal-basic)
+-   [Basic reversed](./minimal-basic_reverse)
 -   [Cloze](./minimal-cloze)
 
 ## Instructions
