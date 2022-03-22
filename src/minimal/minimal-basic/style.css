@@ -43,7 +43,7 @@
 /* -------------------------------------------------- BACKGROUND */
 .card {
   background-color: #ececec;
-  padding: 0.5em;
+  padding: 0.5em 0;
   cursor: var(--cursor);
 }
 .card.night_mode {
