@@ -24,7 +24,7 @@ If you like my work, please consider supporting.
 -   Automatic dark and night theme switching
 -   Responsive design - full support for desktop and mobile apps
 -   Customizable color palette
--   Support for Basic and Cloze note types
+-   Support for Basic, Basic reverse and Cloze note types
 -   Tags for quick context
 -   Click and hold to expand images
 -   Preferences for tweaking optional features
@@ -69,9 +69,9 @@ The following add-ons are currently supported
 
 Tested on
 
--   Desktop: Anki 2.1.49 (Mac)
--   Mobile: AnkiDroid 2.15 (Can someone test on iOS?)
--   Browsers (AnkiWeb): Chrome(97.0.4692.71), Safari(15.0)
+-   **Desktop**: Anki 2.1.49 (Mac)
+-   **Mobile**: AnkiDroid 2.15 (Can someone test on iOS?)
+-   **Browsers** (AnkiWeb): Chrome(97.0.4692.71), Safari(15.0)
 
 ## Requirements
 
@@ -79,5 +79,5 @@ Tested on
 
 ## Plans for future
 
--   [ ] New theme
+-   [x] New theme
 -   [ ] Support for more card types (AnKing, IO enhanced, etc.)
