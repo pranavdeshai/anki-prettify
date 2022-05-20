@@ -1,0 +1,357 @@
+/* Prettify by @pranavdeshai: Minimal
+
+Version: 0.1.0
+Readme: https://github.com/pranavdeshai/anki-prettify
+Links:
+- Reddit: https://www.reddit.com/user/Various_Breadfruit48
+- GitHub: https://github.com/pranavdeshai
+- Buy Me a Coffee: https://www.buymeacoffee.com/pranavdeshai
+- Ko-fi: https://ko-fi.com/pranavdeshai
+
+/* -------------------------------------------------- PREFERENCES */
+:root {
+  --card-max-width: 40em;
+  --card-text-align: left;
+  --font-size-regular: 16px;
+  --font-size-small: 14px;
+  --font-family: 'Inter', -apple-system, sytem-ui, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica, Arial, sans-serif;
+  --img-width: 50%;
+  --img-brightness: 0.75;
+  --img-filter: none;
+}
+
+/* -------------------------------------------------- COLORS */
+.card {
+  /* Light theme */
+  background-color: #cfd6d8;
+  --text-fg: #333333e6;
+  --text-fg-faint: #333333cc;
+  --text-bg-selected: #3333331a;
+  --card-bg: #ffffff;
+  --card-border: #f7f7f7;
+  --card-box-shadow: #3c42570f;
+  --divider: #3333331a;
+  --tag-fg: #333333cc;
+  --tag-bg: #3333330f;
+  --tag-fg-active: #333333;
+  --tag-bg-active: #3333331a;
+  --tag-border: transparent;
+  --cloze-fg: #348ccb;
+  --cloze-bg: transparent;
+  --link-fg: #2a70a2;
+  --link-bg: transparent;
+  --link-fg-active: #2f7eb6;
+  --link-bg-active: transparent;
+  --bold-fg: var(--text-fg);
+  --italic-fg: var(--text-fg);
+  --bold-italic-fg: var(--text-fg);
+  --underline-fg: var(--text-fg);
+}
+
+.card.night_mode {
+  /* Dark theme */
+  background-color: #242426;
+  --text-fg: #ffffffe6;
+  --text-fg-faint: #ffffffb3;
+  --text-bg-selected: #ffffff1f;
+  --card-bg: #2e2f31;
+  --card-border: #ffffff0a;
+  --card-box-shadow: #0000001f;
+  --divider: #ffffff1f;
+  --tag-fg: #ffffffb3;
+  --tag-bg: #ffffff14;
+  --tag-fg-active: #ffffff;
+  --tag-bg-active: #ffffff1f;
+  --tag-border: transparent;
+  --cloze-fg: #99ebff;
+  --cloze-bg: transparent;
+  --link-fg: #5da3d5;
+  --link-bg: transparent;
+  --link-fg-active: #71afda;
+  --link-bg-active: transparent;
+  --bold-fg: var(--text-fg);
+  --italic-fg: var(--text-fg);
+  --bold-italic-fg: var(--text-fg);
+  --underline-fg: var(--text-fg);
+}
+
+/* -------------------------------------------------- BACKGROUND */
+.card {
+  cursor: default;
+  padding: 0.5em 0;
+
+  html:not(.mobile) & {
+    padding: 0.5em;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* -------------------------------------------------- FLASHCARD */
+.prettify-flashcard {
+  background-color: var(--card-bg);
+  border-radius: 0.25em;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-box-shadow) 0px 7px 14px 0px,
+    var(--card-box-shadow) 0px 3px 6px 0px;
+  color: var(--text-fg);
+  font-family: var(--font-family);
+  font-size: var(--font-size-regular);
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: var(--card-max-width);
+  text-align: var(--card-text-align);
+  word-wrap: break-word;
+
+  ::selection {
+    background-color: var(--text-bg-selected);
+  }
+}
+
+/* -------------------------------------------------- FIELDS */
+.prettify-field {
+  margin: 2em;
+
+  .mobile & {
+    margin: 1em;
+  }
+}
+
+.prettify-field--back {
+  color: var(--text-fg-faint);
+  font-size: var(--font-size-small);
+}
+
+/* -------------------------------------------------- CLOZE */
+.cloze {
+  background-color: var(--cloze-bg);
+  color: var(--cloze-fg);
+}
+
+/* -------------------------------------------------- DECK */
+.prettify-deck {
+  margin: 2em;
+  display: flex;
+  color: var(--text-fg-faint);
+  font-size: var(--font-size-small);
+
+  .mobile & {
+    margin: 1em;
+  }
+}
+
+.prettify-subdeck {
+  text-decoration: underline;
+}
+
+/* -------------------------------------------------- TAGS */
+.prettify-tags {
+  margin: 2em;
+  display: flex;
+  font-size: var(--font-size-small);
+
+  .mobile & {
+    margin: 1em;
+  }
+}
+
+.prettify-tag {
+  all: initial;
+  background-color: var(--tag-bg);
+  border-radius: 0.2em;
+  color: var(--tag-fg);
+  display: inline;
+  font-size: var(--font-size-small);
+  font-family: var(--font-family);
+  margin-right: 0.5em;
+  padding: 0.25em;
+
+  &:hover {
+    background-color: var(--tag-bg-active);
+    color: var(--tag-fg-active);
+    cursor: pointer;
+  }
+}
+
+/* -------------------------------------------------- DIVIDER */
+.prettify-divider {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dashed var(--divider);
+  margin: 1em;
+  padding: 0;
+}
+
+.prettify-divider--answer {
+  margin: 0 0 1em;
+}
+
+/* -------------------------------------------------- IMAGES */
+img {
+  border-radius: 0.25em;
+  display: block;
+  margin: 1em auto;
+  max-width: var(--img-width) !important;
+  transition: max-width 0.25s 0.1s, opacity 0.25s 0.1s, filter 0.1s,
+    transform 0s;
+
+  .night_mode & {
+    filter: var(--img-filter);
+    opacity: var(--img-brightness);
+  }
+
+  &:hover {
+    cursor: zoom-in;
+    filter: none;
+    max-width: 100% !important;
+    opacity: 1;
+  }
+
+  & + br {
+    display: none;
+  }
+
+  html:not(.mobile) &:active {
+    border: 1px solid var(--link-fg-active);
+    cursor: zoom-out;
+    filter: none;
+    left: 0;
+    max-width: 95% !important;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    transform: translate(calc(50vw - 50%), calc(50vh - 50%));
+    z-index: 100;
+  }
+}
+
+/* -------------------------------------------------- TABLES */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 0 auto;
+  max-width: 100%;
+
+  thead {
+    background-color: var(--card-border);
+  }
+
+  tr {
+    &:nth-of-type(even) {
+      background-color: var(--card-border);
+    }
+
+    &:first-child {
+      th {
+        &:first-child {
+          border-top-left-radius: 0.25em;
+        }
+
+        &:last-child {
+          border-top-right-radius: 0.25em;
+        }
+      }
+    }
+
+    &:last-child {
+      td {
+        &:first-child {
+          border-bottom-left-radius: 0.25em;
+        }
+
+        &:last-child {
+          border-bottom-right-radius: 0.25em;
+        }
+      }
+    }
+  }
+
+  th {
+    border-bottom: solid 1px var(--text-bg-selected);
+    border-left: solid 1px var(--text-bg-selected);
+    border-top: solid 1px var(--text-bg-selected);
+    padding: 0.5em;
+
+    &:last-child {
+      border-right: solid 1px var(--text-bg-selected);
+    }
+  }
+
+  td {
+    border-bottom: solid 1px var(--text-bg-selected);
+    border-left: solid 1px var(--text-bg-selected);
+    padding: 0.5em;
+
+    &:last-of-type {
+      border-right: solid 1px var(--text-bg-selected);
+    }
+  }
+}
+
+/* -------------------------------------------------- HYPERLINKS */
+a {
+  &,
+  &:visited {
+    text-decoration: none;
+    color: var(--link-fg);
+  }
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+    color: var(--link-fg-active);
+  }
+}
+
+/* -------------------------------------------------- FORMATTING */
+b {
+  color: var(--bold-fg);
+}
+
+i {
+  color: var(--italic-fg);
+}
+
+b > i,
+i > b {
+  color: var(--bold-italic-fg);
+}
+
+u {
+  color: var(--underline-fg);
+}
+
+/* -------------------------------------------------- CUSTOM FONTS */
+@font-face {
+  font-family: Inter;
+  src: local('Inter-Regular'), url('_Inter-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: local('Inter-Bold'), url('_Inter-Bold.woff2') format('wofff2');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Inter;
+  src: local('Inter-Italic'), url('_Inter-Italic.woff2') format('wofff2');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: local('Inter-BoldItalic'),
+    url('_Inter-BoldItalic.woff2') format('wofff2');
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* -------------------------------------------------- END OF THEME */

@@ -1,0 +1,382 @@
+// Nord color palette
+$nord0: #2e3440;
+$nord1: #3b4252;
+$nord2: #434c5e;
+$nord3: #4c566a;
+$nord4: #d8dee9;
+$nord5: #e7e9f0;
+$nord6: #eceff4;
+$nord7: #8fbcbb;
+$nord8: #88c0d0;
+$nord9: #81a1c1;
+$nord10: #5e81ac;
+$nord11: #bf616a;
+$nord12: #d08770;
+$nord13: #ebcb8b;
+$nord14: #a3be8c;
+$nord15: #b48ead;
+
+/* Prettify by @pranavdeshai: Nord
+
+Version: 0.1.0
+Readme: https://github.com/pranavdeshai/anki-prettify
+Links:
+- Reddit: https://www.reddit.com/user/Various_Breadfruit48
+- GitHub: https://github.com/pranavdeshai
+- Buy Me a Coffee: https://www.buymeacoffee.com/pranavdeshai
+- Ko-fi: https://ko-fi.com/pranavdeshai
+
+/* -------------------------------------------------- PREFERENCES */
+:root {
+  --card-max-width: 40em;
+  --card-text-align: left;
+  --font-size-regular: 16px;
+  --font-size-small: 14px;
+  --font-family: 'Rubik', -apple-system, sytem-ui, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica, Arial, sans-serif;
+  --img-width: 50%;
+  --img-brightness: 1;
+  --img-filter: none;
+}
+
+/* -------------------------------------------------- COLORS */
+.card {
+  /* Light theme */
+  background-color: #ececec;
+  --text-fg: #{$nord2};
+  --text-fg-faint: #{$nord3};
+  --text-bg-selected: #{$nord6};
+  --card-bg: #ffffff;
+  --card-border: transparent;
+  --card-box-shadow: #b8c2d740;
+  --divider: #{$nord4};
+  --tag-fg: #{$nord3};
+  --tag-bg: transparent;
+  --tag-fg-active: #{$nord7};
+  --tag-bg-active: transparent;
+  --tag-border: #{$nord4};
+  --tag-border-active: #{$nord7};
+  --cloze-fg: #{$nord8};
+  --cloze-bg: transparent;
+  --link-fg: #{$nord9};
+  --link-bg: transparent;
+  --link-fg-active: #{$nord7};
+  --link-bg-active: #{$nord6};
+  --bold-fg: #{$nord11};
+  --italic-fg: #{$nord13};
+  --bold-italic-fg: #{$nord12};
+  --underline-fg: #{$nord14};
+}
+
+.card.night_mode {
+  /* Dark theme */
+  background-color: #242933;
+  --text-fg: #{$nord5};
+  --text-fg-faint: #{$nord4};
+  --text-bg-selected: #{$nord1};
+  --card-bg: #{$nord0};
+  --card-border: transparent;
+  --card-box-shadow: #0f111540;
+  --divider: #{$nord3};
+  --tag-fg: #{$nord4};
+  --tag-bg: transparent;
+  --tag-fg-active: #{$nord7};
+  --tag-bg-active: transparent;
+  --tag-border: #{$nord3};
+  --tag-border-active: #{$nord7};
+  --cloze-fg: #{$nord8};
+  --cloze-bg: transparent;
+  --link-fg: #{$nord9};
+  --link-bg: transparent;
+  --link-fg-active: #{$nord7};
+  --link-bg-active: #{$nord2};
+  --bold-fg: #{$nord11};
+  --italic-fg: #{$nord13};
+  --bold-italic-fg: #{$nord12};
+  --underline-fg: #{$nord14};
+}
+
+/* -------------------------------------------------- BACKGROUND */
+.card {
+  cursor: default;
+  padding: 0.5em 0;
+
+  html:not(.mobile) & {
+    padding: 0.5em;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* -------------------------------------------------- FLASHCARD */
+.prettify-flashcard {
+  background-color: var(--card-bg);
+  border-radius: 0.5em;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-box-shadow) 0px 4px 6px;
+  color: var(--text-fg);
+  font-family: var(--font-family);
+  font-size: var(--font-size-regular);
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: var(--card-max-width);
+  text-align: var(--card-text-align);
+  word-wrap: break-word;
+
+  ::selection {
+    background-color: var(--text-bg-selected);
+  }
+}
+
+/* -------------------------------------------------- FIELDS */
+.prettify-field {
+  margin: 2em;
+
+  .mobile & {
+    margin: 1em;
+  }
+}
+
+.prettify-field--back {
+  color: var(--text-fg-faint);
+  font-size: var(--font-size-small);
+}
+
+/* -------------------------------------------------- CLOZE */
+.cloze {
+  background-color: var(--cloze-bg);
+  color: var(--cloze-fg);
+}
+
+/* -------------------------------------------------- DECK */
+.prettify-deck {
+  margin: 2em;
+  display: flex;
+  color: var(--text-fg-faint);
+  font-size: var(--font-size-small);
+
+  .mobile & {
+    margin: 1em;
+  }
+}
+
+.prettify-subdeck {
+  text-decoration: underline;
+}
+
+/* -------------------------------------------------- TAGS */
+.prettify-tags {
+  margin: 2em;
+  display: flex;
+  font-size: var(--font-size-small);
+
+  .mobile & {
+    margin: 1em;
+  }
+}
+
+.prettify-tag {
+  all: initial;
+  background-color: var(--tag-bg);
+  border-radius: 0.25em;
+  border: 1px solid var(--tag-border);
+  color: var(--tag-fg);
+  display: inline;
+  font-size: var(--font-size-small);
+  font-family: var(--font-family);
+  font-style: italic;
+  margin-right: 0.5em;
+  padding: 0.25em;
+  transition: all 0.25s;
+
+  &:hover {
+    background-color: var(--tag-bg-active);
+    border: 1px solid var(--tag-border-active);
+    color: var(--tag-fg-active);
+    cursor: pointer;
+  }
+}
+
+/* -------------------------------------------------- DIVIDER */
+.prettify-divider {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dashed var(--divider);
+  margin: 1em;
+  padding: 0;
+}
+
+.prettify-divider--answer {
+  border-bottom: 1px solid var(--divider);
+}
+
+/* -------------------------------------------------- IMAGES */
+img {
+  border-radius: 0.25em;
+  display: block;
+  margin: 1em auto;
+  max-width: var(--img-width) !important;
+  transition: max-width 0.25s 0.1s, opacity 0.25s 0.1s, filter 0.1s,
+    transform 0s;
+
+  .night_mode & {
+    filter: var(--img-filter);
+    opacity: var(--img-brightness);
+  }
+
+  &:hover {
+    cursor: zoom-in;
+    filter: none;
+    max-width: 100% !important;
+    opacity: 1;
+  }
+
+  & + br {
+    display: none;
+  }
+
+  html:not(.mobile) &:active {
+    border: 1px solid var(--link-fg-active);
+    cursor: zoom-out;
+    filter: none;
+    left: 0;
+    max-width: 95% !important;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    transform: translate(calc(50vw - 50%), calc(50vh - 50%));
+    z-index: 100;
+  }
+}
+
+/* -------------------------------------------------- TABLES */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 0 auto;
+  max-width: 100%;
+
+  thead {
+    background-color: var(--text-bg-selected);
+  }
+
+  tr {
+    &:nth-of-type(even) {
+      background-color: var(--text-bg-selected);
+    }
+
+    &:first-child {
+      th {
+        &:first-child {
+          border-top-left-radius: 0.5em;
+        }
+        &:last-child {
+          border-top-right-radius: 0.5em;
+        }
+      }
+    }
+
+    &:last-child {
+      td {
+        &:first-child {
+          border-bottom-left-radius: 0.5em;
+        }
+        &:last-child {
+          border-bottom-right-radius: 0.5em;
+        }
+      }
+    }
+  }
+
+  th {
+    border-bottom: solid 1px var(--card-border);
+    border-left: solid 1px var(--card-border);
+    border-top: solid 1px var(--card-border);
+    padding: 0.5em;
+
+    &:last-child {
+      border-right: solid 1px var(--card-border);
+    }
+  }
+  td {
+    border-bottom: solid 1px var(--card-border);
+    border-left: solid 1px var(--card-border);
+    padding: 0.5em;
+
+    &:last-of-type {
+      border-right: solid 1px var(--card-border);
+    }
+  }
+}
+
+/* -------------------------------------------------- HYPERLINKS */
+a {
+  &,
+  &:visited {
+    text-decoration: none;
+    color: var(--link-fg);
+    border-radius: 0.25em;
+    padding: 0 0.1em;
+    transition: all 0.1s;
+  }
+
+  &:hover,
+  &:active {
+    color: var(--link-fg-active);
+    background-color: var(--link-bg-active);
+  }
+}
+
+/* -------------------------------------------------- FORMATTING */
+b,
+strong {
+  color: var(--bold-fg);
+}
+
+i,
+em {
+  color: var(--italic-fg);
+}
+
+b > i,
+i > b {
+  color: var(--bold-italic-fg);
+}
+
+u {
+  color: var(--underline-fg);
+}
+
+/* -------------------------------------------------- CUSTOM FONTS */
+@font-face {
+  font-family: Rubik;
+  src: local('Rubik-Regular'), url('_Rubik-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: local('Rubik-Bold'), url('_Rubik-Bold.woff2') format('wofff2');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: local('Rubik-Italic'), url('_Rubik-Italic.woff2') format('wofff2');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: local('Rubik-BoldItalic'),
+    url('_Rubik-BoldItalic.woff2') format('wofff2');
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* -------------------------------------------------- END OF THEME */
