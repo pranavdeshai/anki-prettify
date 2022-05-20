@@ -95,7 +95,7 @@ Source code (templates and themes) is located in the [`src`](src) directory.
 
 To update to the latest version of Prettify (themes/note types), just download the required decks again.
 
-> **Important**: The already existing templates and styles will be _overwritten_ once you import the deck with updated content. To avoid any loss of edits, it is highly recommended that you use clones of the downloaded note types. (Refer to [Anki manual - Adding a note type](https://docs.ankiweb.net/editing.html#adding-a-note-type) for instructions on cloning a note type).
+> **Warning**: The already existing templates and styles will be _overwritten_ once you import the deck with updated content. To avoid any loss of edits, it is highly recommended that you use clones of the downloaded note types. (Refer to [Anki manual - Adding a note type](https://docs.ankiweb.net/editing.html#adding-a-note-type) for instructions on cloning a note type).
 
 ## Add-on support
 
