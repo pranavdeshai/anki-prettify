@@ -1,0 +1,53 @@
+{
+    "nord": {
+        "cloze": {
+            "model_id": 1336846984,
+            "deck_id": 1968704687,
+            "note_id": 1857152240
+        },
+        "basic": {
+            "model_id": 1768389652,
+            "deck_id": 1139601278,
+            "note_id": 1259580098
+        },
+        "basic_reverse": {
+            "model_id": 2039375046,
+            "deck_id": 1272434610,
+            "note_id": 1665602532
+        }
+    },
+    "minimal": {
+        "cloze": {
+            "model_id": 1828110925,
+            "deck_id": 1534501370,
+            "note_id": 2068778827
+        },
+        "basic": {
+            "model_id": 2079419815,
+            "deck_id": 2014108328,
+            "note_id": 1132448923
+        },
+        "basic_reverse": {
+            "model_id": 2093908174,
+            "deck_id": 1435484790,
+            "note_id": 1288307407
+        }
+    },
+    "dracula": {
+        "cloze": {
+            "model_id": 1508806048,
+            "deck_id": 1600383727,
+            "note_id": 1923563318
+        },
+        "basic": {
+            "model_id": 1101224658,
+            "deck_id": 1848383464,
+            "note_id": 1985577889
+        },
+        "basic_reverse": {
+            "model_id": 2068252356,
+            "deck_id": 1735475348,
+            "note_id": 1554162403
+        }
+    }
+}

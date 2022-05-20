@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dual theme cover</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html {
+            background-color: #ececec;
+        }
+
+        img {
+            position: fixed;
+            max-width: 60%;
+            border-radius: 5px;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 22px 70px 4px rgba(0, 0, 0, 0.56), 0 0 0 1px rgba(0, 0, 0, 0.0);
+        }
+
+        #front {
+            z-index: 2;
+            left: 10%;
+            bottom: 5%;
+        }
+
+        #back {
+            z-index: 1;
+            right: 10%;
+            top: 5%;
+        }
+
+        #caption {
+            font-family: Rubik;
+            font-size: 50px;
+            font-weight: bold;
+            position: fixed;
+            left: 50px;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../../res/images/nord-light.png" id="front">
+    <img src="../../res/images/nord-dark.png" id="back">
+    <div id="caption">Nord</div>
+</body>
+
+</html>

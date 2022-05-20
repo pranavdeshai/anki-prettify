@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Prettify cover</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root {
+        --vgap: 100px;
+        --vdelta: 90px;
+        --hgap: 170px;
+        --hgap-mobile: 90px;
+      }
+
+      html {
+        background-color: .desktop:nth-child(2)ecec;
+        font-family: Inter;
+      }
+
+      .desktop img {
+        max-width: 30%;
+      }
+
+      .mobile img {
+        max-height: 40%;
+      }
+
+      img {
+        position: fixed;
+        border-radius: 5px;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 22px 70px 4px rgba(0, 0, 0, 0.56), 0 0 0 1px rgba(0, 0, 0, 0.0);
+      }
+
+      /* Desktop */
+      .desktop :nth-of-type(1) {
+        left: calc(1 * var(--hgap) - var(--vdelta));
+        bottom: calc(5 * var(--vgap));
+        z-index: 1;
+      }
+
+      .desktop :nth-of-type(2) {
+        left: calc(2 * var(--hgap) - var(--vdelta));
+        bottom: calc(4 * var(--vgap));
+        z-index: 2;
+      }
+
+      .desktop :nth-of-type(3) {
+        left: calc(3 * var(--hgap) - var(--vdelta));
+        bottom: calc(3 * var(--vgap));
+        z-index: 3;
+      }
+
+      .desktop :nth-of-type(4) {
+        left: calc(4 * var(--hgap) - var(--vdelta));
+        bottom: calc(2 * var(--vgap));
+        z-index: 4;
+      }
+
+      .desktop :nth-of-type(5) {
+        left: calc(5 * var(--hgap) - var(--vdelta));
+        bottom: calc(1 * var(--vgap));
+        z-index: 5;
+      }
+
+      /* Mobile */
+      .mobile :nth-of-type(1) {
+        right: calc(1 * var(--hgap-mobile));
+        top: calc(5 * var(--vgap));
+        z-index: 5;
+      }
+
+      .mobile :nth-of-type(2) {
+        right: calc(2 * var(--hgap-mobile));
+        top: calc(4 * var(--vgap));
+        z-index: 4;
+      }
+
+      .mobile :nth-of-type(3) {
+        right: calc(3 * var(--hgap-mobile));
+        top: calc(3 * var(--vgap));
+        z-index: 3;
+      }
+
+      .mobile :nth-of-type(4) {
+        right: calc(4 * var(--hgap-mobile));
+        top: calc(2 * var(--vgap));
+        z-index: 2;
+      }
+
+      .mobile :nth-of-type(5) {
+        right: calc(5 * var(--hgap-mobile));
+        top: calc(1 * var(--vgap));
+        z-index: 1;
+      }
+
+      .caption {
+        position: fixed;
+        top: 50px;
+        left: 90px;
+      }
+
+      .title {
+        font-size: 60px;
+        font-weight: bold;
+      }
+
+      .name {
+        font-size: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="desktop">
+      <img src="../../res/images/dracula.png" />
+      <img src="../../res/images/nord-dark.png" />
+      <img src="../../res/images/minimal-dark.png" />
+      <img src="../../res/images/nord-light.png" />
+      <img src="../../res/images/minimal-light.png" />
+    </div>
+    <div class="mobile">
+      <img src="../../res/images/minimal-light-mobile.png" />
+      <img src="../../res/images/nord-light-mobile.png" />
+      <img src="../../res/images/minimal-dark-mobile.png" />
+      <img src="../../res/images/nord-dark-mobile.png" />
+      <img src="../../res/images/dracula-mobile.png" />
+    </div>
+    <div class="caption">
+      <span class="title">Prettify</span><br />
+      <span class="name">by @pranavdeshai</span>
+    </div>
+  </body>
+</html>
