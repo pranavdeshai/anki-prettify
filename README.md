@@ -110,9 +110,9 @@ The following add-ons are currently supported
 
 Tested on
 
-- Desktop: Anki 2.1.49+ (Mac)
-- Mobile: AnkiDroid 2.15+
-- Browsers (AnkiWeb): Chrome (97.0.4692.71+), Safari (15.0+)
+- **Desktop**: Anki 2.1.49+ (Mac)
+- **Mobile**: AnkiDroid 2.15+
+- **Browsers** (AnkiWeb): Chrome (97.0.4692.71+), Safari (15.0+)
 
 > **Note**: Although tested on relatively newer versions of Anki, all the themes should work as expected with all versions of Anki 2.1+.
 
@@ -133,4 +133,4 @@ If you like my work, you can support the development by
 - Starring the project on GitHub
 - Following me on GitHub
 - [Buying me a coffee](https://www.buymeacoffee.com/pranavdeshai)
-- Donating on [Ko-fi](https://ko-fi.com/pranavdeshai)
+- # Donating on [Ko-fi](https://ko-fi.com/pranavdeshai)
