@@ -56,7 +56,7 @@ Supported on desktop, mobile and web!
 | Theme                                          | Download                                        | Font                                                                 |
 | ---------------------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------- |
 | ![Minimal cover](res/images/minimal-cover.png) | [Minimal](themes/minimal/prettify-minimal.apkg) | [Inter](https://rsms.me/inter/)                                      |
-| ![Nord cover](res/images/nord-cover.png)       | [Nord](themes/nord/prettify-nord.apkg)          | [Rubik](https://rsms.me/inter/)                                      |
+| ![Nord cover](res/images/nord-cover.png)       | [Nord](themes/nord/prettify-nord.apkg)          | [Rubik](https://fonts.google.com/specimen/Rubik)                     |
 | ![Dracula cover](res/images/dracula-cover.png) | [Dracula](themes/dracula/prettify-dracula.apkg) | [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro) |
 
 ## Instructions
@@ -69,7 +69,7 @@ Supported on desktop, mobile and web!
 
 - Download [`prettify.apkg`](prettify.apkg) to install all the themes in one master deck.
 
-- To download decks for specific note type, choose the note type folder from the `notetypes` directory under the theme directory. (E.`themes/THEME/notetypes/NOTETYPE`)
+- To download decks for specific note type, choose the note type folder from the `notetypes` directory under the theme directory. (`themes/THEME/notetypes/NOTETYPE`)
 
 > **Note**: Download links to accompanying fonts to themes are provided above. Refer to [Anki Manual - Installing Fonts](https://docs.ankiweb.net/templates/styling.html#installing-fonts) for instructions.
 
@@ -122,9 +122,11 @@ Tested on
 
 ## Plans for future
 
-- [x] New theme
-- [ ] More themes!
+- [x] ~~New theme~~
+- [ ] Documentation
 - [ ] "Type in the answer" note type
+- [ ] Out of the box support for popular note types (E.g. AnKing note types)
+- [ ] More themes!
 
 ## Support development
 
