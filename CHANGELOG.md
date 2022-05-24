@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2022-05-24
+
+### Fixed
+
+- Fixed tags not wrapping to next line (#7)
+
 ## [0.1.0] - 2022-05-20
 
 ### Added
@@ -29,5 +35,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix card not center-aligning on AnkiDroid
 - Fix tables not colouring properly
 
-[unreleased]: https://github.com/pranavdeshai/anki-prettify/compare/0.1.0...main
+[unreleased]: https://github.com/pranavdeshai/anki-prettify/compare/0.1.1...main
+[0.1.1]: https://github.com/pranavdeshai/anki-prettify/releases/tag/0.1.0...0.1.1
 [0.1.0]: https://github.com/pranavdeshai/anki-prettify/releases/tag/0.1.0
