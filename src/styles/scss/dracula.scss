@@ -13,7 +13,7 @@ $yellow: #f1fa8c;
 
 /* Prettify by @pranavdeshai: Dracula
 
-Version: 0.1.0
+Version: 0.1.1
 Readme: https://github.com/pranavdeshai/anki-prettify
 Links:
 - Reddit: https://www.reddit.com/user/Various_Breadfruit48
@@ -138,6 +138,7 @@ Links:
 .prettify-tags {
   margin: 2em;
   display: flex;
+  flex-flow: row wrap;
   font-size: var(--font-size-small);
 
   .mobile & {
@@ -154,9 +155,10 @@ Links:
   display: inline;
   font-size: var(--font-size-small);
   font-family: var(--font-family);
-  margin-right: 0.5em;
+  margin: 0 0.5em 0.5em 0;
   padding: 0.25em;
   transition: all 0.25s;
+  word-break: break-word;
 
   &:hover {
     background-color: var(--tag-bg-active);
