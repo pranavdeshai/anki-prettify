@@ -41,12 +41,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix card not center-aligning on AnkiDroid
 - Fix tables not colouring properly
 
-<<<<<<< HEAD
 [unreleased]: https://github.com/pranavdeshai/anki-prettify/compare/0.1.2...main
 [0.1.2]: https://github.com/pranavdeshai/anki-prettify/releases/tag/0.1.1...0.1.2
 [0.1.1]: https://github.com/pranavdeshai/anki-prettify/releases/tag/0.1.0...0.1.1
-=======
-[unreleased]: https://github.com/pranavdeshai/anki-prettify/compare/0.1.1...main
-[0.1.1]: https://github.com/pranavdeshai/anki-prettify/compare/0.1.0...0.1.1
->>>>>>> d891b03e8ee50daeb65c25478a62dfa193f45453
 [0.1.0]: https://github.com/pranavdeshai/anki-prettify/releases/tag/0.1.0
