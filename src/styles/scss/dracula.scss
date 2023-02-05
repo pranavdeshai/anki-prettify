@@ -13,7 +13,7 @@ $yellow: #f1fa8c;
 
 /* Prettify by @pranavdeshai: Dracula
 
-Version: 0.1.1
+Version: 0.1.2
 Readme: https://github.com/pranavdeshai/anki-prettify
 Links:
 - Reddit: https://www.reddit.com/user/Various_Breadfruit48
@@ -317,6 +317,10 @@ i > b {
 
 u {
   color: var(--underline-fg);
+}
+
+pre {
+  white-space: normal;
 }
 
 /* -------------------------------------------------- CUSTOM FONTS */
