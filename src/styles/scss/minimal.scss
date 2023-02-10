@@ -137,6 +137,7 @@ Links:
   display: flex;
   color: var(--text-fg-faint);
   font-size: var(--font-size-small);
+  white-space: nowrap; //prevents long tag sequences from wrapping
 
   .mobile & {
     margin: 1em;
@@ -145,6 +146,10 @@ Links:
 
 .prettify-subdeck {
   text-decoration: underline;
+  &:last-child {
+    text-overflow: ellipsis; // '...' ending
+    overflow: clip; // clips final child
+  }
 }
 
 /* -------------------------------------------------- TAGS */

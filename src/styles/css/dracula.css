@@ -107,6 +107,7 @@ html:not(.mobile) .card {
   display: flex;
   color: var(--text-fg-faint);
   font-size: var(--font-size-small);
+  white-space: nowrap;
 }
 .mobile .prettify-deck {
   margin: 1em;
@@ -114,6 +115,10 @@ html:not(.mobile) .card {
 
 .prettify-subdeck {
   text-decoration: underline;
+}
+.prettify-subdeck:last-child {
+  text-overflow: ellipsis;
+  overflow: clip;
 }
 
 /* -------------------------------------------------- TAGS */
