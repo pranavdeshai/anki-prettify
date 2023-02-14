@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.3] - 2023-01-15
+
+### Fixed
+
+- Fixed deck names wrapping to next line (thanks to @AnubisNekhet)
+- Fixed cards without tags not showing proper deck breadcrumbs (thanks to @AnubisNekhet)
+
 ## [0.1.2] - 2023-01-05
 
 ### Fixed
@@ -41,7 +48,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix card not center-aligning on AnkiDroid
 - Fix tables not colouring properly
 
-[unreleased]: https://github.com/pranavdeshai/anki-prettify/compare/0.1.2...main
+[unreleased]: https://github.com/pranavdeshai/anki-prettify/compare/0.1.3...main
+[0.1.3]: https://github.com/pranavdeshai/anki-prettify/releases/tag/0.1.2...0.1.3
 [0.1.2]: https://github.com/pranavdeshai/anki-prettify/releases/tag/0.1.1...0.1.2
 [0.1.1]: https://github.com/pranavdeshai/anki-prettify/releases/tag/0.1.0...0.1.1
 [0.1.0]: https://github.com/pranavdeshai/anki-prettify/releases/tag/0.1.0
