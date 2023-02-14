@@ -1,6 +1,6 @@
 <!-- Prettify by @pranavdeshai: Basic (front)
 
-Version: 0.1.2
+Version: 0.1.3
 Readme: https://github.com/pranavdeshai/anki-prettify
 Links:
 - Reddit: https://www.reddit.com/user/Various_Breadfruit48
@@ -43,7 +43,9 @@ Links:
     })
     tagsContainerEl.innerHTML = html
   }
+</script>
 
+<script>
   // Breadcrumbs to current deck
   var deckEl = document.querySelector('.prettify-deck')
   var subDecks = deckEl.innerHTML.split('::').filter(Boolean)
