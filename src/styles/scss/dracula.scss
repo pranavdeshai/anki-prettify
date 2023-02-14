@@ -13,7 +13,7 @@ $yellow: #f1fa8c;
 
 /* Prettify by @pranavdeshai: Dracula
 
-Version: 0.1.2
+Version: 0.1.3
 Readme: https://github.com/pranavdeshai/anki-prettify
 Links:
 - Reddit: https://www.reddit.com/user/Various_Breadfruit48
@@ -124,6 +124,7 @@ Links:
   display: flex;
   color: var(--text-fg-faint);
   font-size: var(--font-size-small);
+  white-space: nowrap;
 
   .mobile & {
     margin: 1em;
@@ -132,6 +133,8 @@ Links:
 
 .prettify-subdeck {
   text-decoration: underline;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 /* -------------------------------------------------- TAGS */
