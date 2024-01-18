@@ -27,7 +27,7 @@ Links:
   --card-text-align: left;
   --font-size-regular: 16px;
   --font-size-small: 14px;
-  --font-family: 'Source Sans Pro', -apple-system, sytem-ui, BlinkMacSystemFont,
+  --font-family: "Source Sans Pro", -apple-system, sytem-ui, BlinkMacSystemFont,
     Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   --img-width: 50%;
   --img-brightness: 1;
@@ -190,7 +190,10 @@ img {
   display: block;
   margin: 1em auto;
   max-width: var(--img-width) !important;
-  transition: max-width 0.25s 0.1s, opacity 0.25s 0.1s, filter 0.1s,
+  transition:
+    max-width 0.25s 0.1s,
+    opacity 0.25s 0.1s,
+    filter 0.1s,
     transform 0s;
 
   .night_mode & {
@@ -329,32 +332,36 @@ pre {
 /* -------------------------------------------------- CUSTOM FONTS */
 @font-face {
   font-family: Source Sans Pro;
-  src: local('SourceSansPro-Regular'),
-    url('_SourceSansPro-Regular.woff2') format('woff2');
+  src:
+    local("SourceSansPro-Regular"),
+    url("_SourceSansPro-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: Source Sans Pro;
-  src: local('SourceSansPro-Bold'),
-    url('_SourceSansPro-Bold.woff2') format('wofff2');
+  src:
+    local("SourceSansPro-Bold"),
+    url("_SourceSansPro-Bold.woff2") format("wofff2");
   font-style: normal;
   font-weight: bold;
 }
 
 @font-face {
   font-family: Source Sans Pro;
-  src: local('SourceSansPro-Italic'),
-    url('_SourceSansPro-Italic.woff2') format('wofff2');
+  src:
+    local("SourceSansPro-Italic"),
+    url("_SourceSansPro-Italic.woff2") format("wofff2");
   font-style: italic;
   font-weight: normal;
 }
 
 @font-face {
   font-family: Source Sans Pro;
-  src: local('SourceSansPro-BoldItalic'),
-    url('_SourceSansPro-BoldItalic.woff2') format('wofff2');
+  src:
+    local("SourceSansPro-BoldItalic"),
+    url("_SourceSansPro-BoldItalic.woff2") format("wofff2");
   font-style: italic;
   font-weight: bold;
 }

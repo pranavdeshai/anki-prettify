@@ -14,7 +14,7 @@ Links:
   --card-text-align: left;
   --font-size-regular: 16px;
   --font-size-small: 14px;
-  --font-family: 'Inter', -apple-system, sytem-ui, BlinkMacSystemFont, Segoe UI,
+  --font-family: "Inter", -apple-system, sytem-ui, BlinkMacSystemFont, Segoe UI,
     Roboto, Helvetica, Arial, sans-serif;
   --img-width: 50%;
   --img-brightness: 0.75;
@@ -95,7 +95,8 @@ Links:
   background-color: var(--card-bg);
   border-radius: 0.25em;
   border: 1px solid var(--card-border);
-  box-shadow: var(--card-box-shadow) 0px 7px 14px 0px,
+  box-shadow:
+    var(--card-box-shadow) 0px 7px 14px 0px,
     var(--card-box-shadow) 0px 3px 6px 0px;
   color: var(--text-fg);
   font-family: var(--font-family);
@@ -201,7 +202,10 @@ img {
   display: block;
   margin: 1em auto;
   max-width: var(--img-width) !important;
-  transition: max-width 0.25s 0.1s, opacity 0.25s 0.1s, filter 0.1s,
+  transition:
+    max-width 0.25s 0.1s,
+    opacity 0.25s 0.1s,
+    filter 0.1s,
     transform 0s;
 
   .night_mode & {
@@ -337,29 +341,36 @@ pre {
 /* -------------------------------------------------- CUSTOM FONTS */
 @font-face {
   font-family: Inter;
-  src: local('Inter-Regular'), url('_Inter-Regular.woff2') format('woff2');
+  src:
+    local("Inter-Regular"),
+    url("_Inter-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: Inter;
-  src: local('Inter-Bold'), url('_Inter-Bold.woff2') format('wofff2');
+  src:
+    local("Inter-Bold"),
+    url("_Inter-Bold.woff2") format("wofff2");
   font-style: normal;
   font-weight: bold;
 }
 
 @font-face {
   font-family: Inter;
-  src: local('Inter-Italic'), url('_Inter-Italic.woff2') format('wofff2');
+  src:
+    local("Inter-Italic"),
+    url("_Inter-Italic.woff2") format("wofff2");
   font-style: italic;
   font-weight: normal;
 }
 
 @font-face {
   font-family: Inter;
-  src: local('Inter-BoldItalic'),
-    url('_Inter-BoldItalic.woff2') format('wofff2');
+  src:
+    local("Inter-BoldItalic"),
+    url("_Inter-BoldItalic.woff2") format("wofff2");
   font-style: italic;
   font-weight: bold;
 }
