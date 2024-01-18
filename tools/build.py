@@ -90,7 +90,7 @@ with open(root / "tools" / "ids.json", "r+") as ids_file:
     for i in root.glob("**/css/*.css"):
         theme = i.stem
 
-        if not theme in ids:
+        if theme not in ids:
             ids[theme] = {}
             print(f"Added new theme to IDs: {theme}")
 
@@ -120,9 +120,7 @@ for t in ids:
             "r+",
         ) as f1, open(
             (root / "src" / "templates" / "default" / n / f"{n}-back.html"), "r+"
-        ) as f2, open(
-            (root / "src" / "styles" / "css" / f"{t}.css")
-        ) as f3:
+        ) as f2, open((root / "src" / "styles" / "css" / f"{t}.css")) as f3:
             front_html = f1.read()
             back_html = f2.read()
             css = f3.read()
