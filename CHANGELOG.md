@@ -49,7 +49,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix tables not colouring properly
 
 [unreleased]: https://github.com/pranavdeshai/anki-prettify/compare/0.1.3...main
-[0.1.3]: https://github.com/pranavdeshai/anki-prettify/releases/tag/0.1.2...0.1.3
-[0.1.2]: https://github.com/pranavdeshai/anki-prettify/releases/tag/0.1.1...0.1.2
-[0.1.1]: https://github.com/pranavdeshai/anki-prettify/releases/tag/0.1.0...0.1.1
+[0.1.3]: https://github.com/pranavdeshai/anki-prettify/compare/0.1.2...0.1.3
+[0.1.2]: https://github.com/pranavdeshai/anki-prettify/compare/0.1.1...0.1.2
+[0.1.1]: https://github.com/pranavdeshai/anki-prettify/compare/0.1.0...0.1.1
 [0.1.0]: https://github.com/pranavdeshai/anki-prettify/releases/tag/0.1.0
