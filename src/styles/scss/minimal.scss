@@ -220,7 +220,7 @@ img {
     opacity: 1;
   }
 
-  & + br {
+  &+br {
     display: none;
   }
 
@@ -303,6 +303,7 @@ table {
 
 /* -------------------------------------------------- HYPERLINKS */
 a {
+
   &,
   &:visited {
     text-decoration: none;
@@ -325,8 +326,8 @@ i {
   color: var(--italic-fg);
 }
 
-b > i,
-i > b {
+b>i,
+i>b {
   color: var(--bold-italic-fg);
 }
 

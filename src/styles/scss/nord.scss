@@ -280,6 +280,7 @@ table {
         &:first-child {
           border-top-left-radius: 0.5em;
         }
+
         &:last-child {
           border-top-right-radius: 0.5em;
         }
@@ -291,6 +292,7 @@ table {
         &:first-child {
           border-bottom-left-radius: 0.5em;
         }
+
         &:last-child {
           border-bottom-right-radius: 0.5em;
         }
@@ -308,6 +310,7 @@ table {
       border-right: solid 1px var(--card-border);
     }
   }
+
   td {
     border-bottom: solid 1px var(--card-border);
     border-left: solid 1px var(--card-border);
