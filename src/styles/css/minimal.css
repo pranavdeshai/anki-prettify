@@ -275,16 +275,16 @@ a:hover, a:active {
 }
 
 /* -------------------------------------------------- FORMATTING */
-b {
+b, strong {
   color: var(--bold-fg);
 }
 
-i {
+i, em {
   color: var(--italic-fg);
 }
 
-b > i,
-i > b {
+:is(b, strong) > :is(i, em),
+:is(i, em) > :is(b, strong) {
   color: var(--bold-italic-fg);
 }
 

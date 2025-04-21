@@ -313,16 +313,21 @@ a {
 b,
 strong {
   color: var(--bold-fg);
+
+  > i,
+  > em {
+    color: var(--bold-italic-fg);
+  }
 }
 
 i,
 em {
   color: var(--italic-fg);
-}
 
-b>i,
-i>b {
-  color: var(--bold-italic-fg);
+  > b,
+  > strong {
+    color: var(--bold-italic-fg);
+  }
 }
 
 u {
